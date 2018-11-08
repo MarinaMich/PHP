@@ -1,13 +1,13 @@
-<?php 
-$color = 'blue';
-$title = 'Title';
-$today = date('Y');
-?>
 <html lang="en"><head>
     <meta charset="UTF-8" http-equiv="content-type">
     <title>Title</title>
 </head>
 <body>
+<?php 
+$color = 'blue';
+$title = 'Title';
+$today = date("j. n. Y");
+?>
 <h1 style="color: <?= $color;?>"><?= $title; ?></h1>
     <ul>
         <li><a href="#">home</a></li>
