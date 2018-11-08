@@ -1,18 +1,22 @@
+﻿<?php
+$color = 'blue';
+$title = 'Title';
+$today = date('Y');
+
+$menu = ['home'=>'index.php', 'archive'=> 'archive.php', 'contact'=>'contact.php'];
+     
+?>
 <html lang="en"><head>
     <meta charset="UTF-8" http-equiv="content-type">
     <title>Title</title>
 </head>
 <body>
-<?php 
-$color = 'blue';
-$title = 'Title';
-$today = date("j. n. Y");
-?>
+
 <h1 style="color: <?= $color;?>"><?= $title; ?></h1>
     <ul>
-        <li><a href="#">home</a></li>
-        <li><a href="#">archive</a></li>
-        <li><a href="#">contact</a></li>
+        <li><a href=<?= $menu ['home']?>>home</a></li>
+        <li><a href=<?= $menu ['archive']?>>archive</a></li>
+        <li><a href=<?= $menu ['contact']?>>contact</a></li>
     </ul>
     <div class="post">
         <div class="detail">
