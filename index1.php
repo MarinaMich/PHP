@@ -2,16 +2,14 @@
 $color = 'blue';
 $title = 'Title';
 $today = date('Y');
-
 $menu = ['home'=>'index.php', 'archive'=> 'archive.php', 'contact'=>'contact.php'];
-     
+  
 ?>
 <html lang="en"><head>
     <meta charset="UTF-8" http-equiv="content-type">
     <title>Title</title>
 </head>
 <body>
-
 <h1 style="color: <?= $color;?>"><?= $title; ?></h1>
     <ul>
         <li><a href=<?= $menu ['home']?>>home</a></li>
