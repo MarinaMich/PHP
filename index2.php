@@ -4,20 +4,19 @@ $title = 'Title';
 $today = date('Y');
 
 $menu = ['home'=>'index.php', 'archive'=> 'archive.php', 'contact'=>'contact.php'];
-     
+   
 ?>
 <html lang="en"><head>
     <meta charset="UTF-8" http-equiv="content-type">
     <title>Title</title>
 </head>
 <body>
-
 <h1 style="color: <?= $color;?>"><?= $title; ?></h1>
     <ul>
         <li><a href=<?= $menu ['home']?>>home</a></li>
         <li><a href=<?= $menu ['archive']?>>archive</a></li>
         <li><a href=<?= $menu ['contact']?>>contact</a></li>
-    </ul>
+
     <div class="post">
         <div class="detail">
             <h2><a href="#">Nunc commodo euismod massa quis vestibulum</a></h2>
